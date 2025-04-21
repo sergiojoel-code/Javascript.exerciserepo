@@ -67,3 +67,19 @@ console.log(`x => -x || x = ${x} => -x = ${-x}`);
 // Unary plus => Intenta convertir el operando en número
 console.log(`+x => x || x = ${-x} => +x = ${+x}`);
 console.log(`+'x' => x || x = '27' => +x = ${+"27"}\n`);
+
+console.log(`--------------- Lógicos ------------------`);
+const a = 10;
+const b = 15;
+console.log(`a: ${a}    b: ${b}\n`);
+
+// Y (and -- &&)
+console.log(`a < b && b >= 15 => ${a < b && b >= 15}`);
+// O (Or -- ||)
+console.log(`a < b || b > 15 => ${a < b || b > 15}`);
+// No (Not -- !)
+console.log(`!(a < b && b >= 15) => ${!(a < b && b >= 15)}`);
+console.log(`!!(a < b && b >= 15) => ${!!(a < b && b >= 15)}`); // Negación doble
+// Nullish coalescing operator (??) => Devuelve el valor de la derecha sí el de la izquierda es null o undefined
+console.log(`null ?? a => ${null && a}`);
+console.log(`10 ?? a => ${10 ?? a}`);
