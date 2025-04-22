@@ -83,3 +83,56 @@ console.log(`!!(a < b && b >= 15) => ${!!(a < b && b >= 15)}`); // Negación dob
 // Nullish coalescing operator (??) => Devuelve el valor de la derecha sí el de la izquierda es null o undefined
 console.log(`null ?? a => ${null && a}`);
 console.log(`10 ?? a => ${10 ?? a}`);
+
+console.log(`--------------- String ------------------`);
+let msj = "Hello,";
+msj += " World!";
+
+console.log(msj);
+
+console.log(`\n------------ Ternary ------------------`);
+let age = 28;
+console.log(`age: ${age}\n`);
+console.log(`${age > 20 ? "Allowed to enter" : "Not allowed to enter"}`);
+
+// ESTRUCTURAS DE CONTROL
+
+console.log(`\n---------------- Condicionales: If Else ---------------------`);
+let grade = 3;
+let color = "red";
+console.log(`grade: ${grade}   color: ${color}\n`);
+
+if (grade >= 3) console.log("Aprobaste");
+
+if (color === "yellow") {
+  console.log("El color es el mismo");
+} else {
+  console.log("El color no es el mismo");
+}
+
+console.log(
+  `\n--------------------- Condicionales: Switch --------------------`
+);
+let grade2 = 2;
+console.log(`grade: ${grade2}\n`);
+
+switch (grade2) {
+  case 5:
+    finalgrade = "Excelente";
+    break;
+  case 4:
+    finalgrade = "Sobresaliente";
+    break;
+  case 3:
+    finalgrade = "Suficiente";
+    break;
+  case 2:
+  case 1:
+  case 0:
+    finalgrade = "Insuficiente";
+    break;
+  default:
+    finalgrade = "Nota erronea";
+    break;
+}
+console.log(` Mi nota final es: ${finalgrade}\n`);
