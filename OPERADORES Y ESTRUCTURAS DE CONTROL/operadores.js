@@ -136,3 +136,27 @@ switch (grade2) {
     break;
 }
 console.log(` Mi nota final es: ${finalgrade}\n`);
+
+console.log(`-------------------- Bucles: While -----------------------`);
+let i = 0;
+
+while (i <= 3) {
+  console.log(`while => i: ${i}`);
+  i = i + 1;
+}
+
+console.log("\ndo while from here:");
+// do while se aplica al menos UNA vez
+do {
+  console.log(`do while => i: ${i}`);
+  i = i + 1;
+} while (i < 8);
+
+console.log(`-------------------- Bucles: For ------------------------`);
+for (let j = 0; j < 3; j++) {
+  console.log(`Log #${j} from loop for (Incremental)\n`);
+}
+
+for (let k = 5; k > 2; k--) {
+  console.log(`Log #${k} from loop for (Decremental)`);
+}
