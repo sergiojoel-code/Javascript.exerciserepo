@@ -2,7 +2,7 @@
  Sin parámetros ni retorno, con uno o varios parámetros, con retorno... */
 
 //  Funciones declaradas (Function declarations)
-function saludar() {
-    console.log("Hola!");
+function saludar(nombre, apellido) {
+  console.log(`Hola ${nombre} ${apellido}!`);
 }
-saludar();
+saludar("sergio", "salazar");
