@@ -6,3 +6,9 @@ function saludar(nombre, apellido) {
   console.log(`Hola ${nombre} ${apellido}!`);
 }
 saludar("sergio", "salazar");
+
+// Funciones Expresadas (Function expressions)
+const saludarExpresado = function (name, surname) {
+    console.log(`Hola ${name} ${surname} desde una función espresada!`)
+}
+saludarExpresado("Sergio", "Salazar");
